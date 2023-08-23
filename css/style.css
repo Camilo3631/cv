@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}/* selector universal con un relleno de 0, una margen de 0  y la propiedad box-sizing con boder-box:
+hace que el paddigin y el boder posen a fromar parte del caculo del ancho de la caja*/
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background: #f2f2f2;
+}/* etiqueta body del cuerpo del a pagina con la propiedad font-family paral la familia tipografica : 0pen sans,
+ sans-serif que es una fuente sin serifas (adornos en los caractres) fuente segura*/
+main{
+    background: #fff;
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-top: 2px solid blue;
+}/* etiqueta main que representa el contendio principal con un fondo de color balco,
+ un ancho del 90%, un maximo ancho de 1000px, una margen de 2rem auto (32px auto), un paddigin 2rem (32px), un borde-top: 2px solido color azul*/
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}/* etiqueta class encabezado con un disply :flex que hace el elemento flexbile,aling-items: center para los items queden centrados, 
+y justify-content: sapace-between los elementos quedan jusficados uno al otro extremo del otro*/
+.encabezado .nombre h1{
+    font-size: 2rem;
+}/* etiqueta class encabezado, precedido con la etiqueta class nombre con la etiqueta h1 con un tamaño de fuente de 32px (2rem)*/
+.encabezado .contacto{
+    display: flex;
+    flex-direction: column;
+}/* eitqueta class encabezado con la clase contacto, con un display flex que hace el elemento flexible y un flex-direction column que hace que los elleemntos,
+se posicionen uno debajo de otro*/
+.encabezado .btn{
+    color: #FFF;
+    background: darkblue;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 0.25rem
+}/* etiqueta class encabezado precdido de la etiqueta class btn con un color de fuente blanco, un fondo azul sin decoracíon en el texto,
+un texto centrado, un relleno de 0.5rem (8px) y un margen de 0.25rem (una margen de 4px)*/
+.encabezado .mail{
+    color:darkblue;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 0.25rem;
+}/* etiqueta class encabezado , precedidal a class mail del coreeo con un color de la fuente azuloscuro, un font-weigth 700 (peso),
+sin decoracion el texto, una magen inferior de 0.25rem (4px)*/
+.acerca{
+    padding: 2rem 0;
+    border-bottom: 1px solid #CCC;
+}/* etiqueta class acerca con un paddgin de 2rem 0 (32px 0), un borde infeior de 1px solido gris*/
+.habilidades{
+    padding: 1rem 0;
+}/* etqueta class habailidades con un relleno de 1rem 0 (16px 0)*/
+.habilidades ul {
+    list-style: none;
+}/* eitqueta class habialides ul con la propiedad list-style para darle estilo a lista pero (en este caso quita las bolitas */
+
+.habilidades ul li{
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 0.5rem;
+}/* etiqueta  class habialides ul li con una fuente con un peso de 700 y que display : inline-block y una margen derecha de 0.5rem (8px)
+
+.experencia{
+    margin: 1.5rem 0;
+}/* etiqueta class experiencia con una margen de 1.5rem 0 (24px)*/
+.experencia h3{
+    margin-bottom: 1rem;
+}/* etiqueta class expereiencia precedida de h3 con un margen inferior de 1rem (32px) */
+
+.experiencia .trabajo{
+    padding: 1rem 0;
+    border-bottom: 1px solid #CCC;
+}/* etiqueta class expereicia precedida la class trabajo con un relleno de 1rem 0 (32px 0), 
+un borde inferior de 1px solido de color gris*/
+
+.experencia .puesto{
+    margin-bottom: 1rem;
+    font-size: 14px;
+}/* etiqueta claass expereincia precedida de la clase puesto con una magen inferior de 1rem (32px),
+con el tamaño de la fuente de 14px */
+.educacion{
+    margin: 1.5rem 0;
+}/* etiqueta class educacíon con una margen de 1.5rem o (24px 0)*/
+
+.educacion h3{
+    margin-bottom: 1rem;
+}/* etiqueta class educacíon precedida el h3 con una magen ifeior de 1rem (32px)*/
+
+.proyectos{
+    margin: 2rem 0;
+}/* etiueta class proyectos con una magen de 2rem 0 (64px)*/
+
+.proyectos .galeria{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}/* etiqueta class proyectos precedida la class galeria, con un display flex para hacer el elemento flexible,
+con align-items center para que esten centrados, jusifiy-conten space-bettween que se encuentre uno cada lado y uno en el centro*/
+
+
+.proyectos .tarjeta{
+    width: 30%;
+}/* etiqueta class proyectos precedida la class trajeta con un ancho del 30%*/
+
+
+.proyectos img{
+    width: 70%;
+}/* etiqueta class proyectos precida la etqueta img con un ancho del 21%*/
+
+
+.proyectos  .tajeta a{
+    text-decoration: none;
+    color:#000;
+}/* etqieuta class proyectos, precedida la class trajeta a enalces con un texto sin decoracíon,
+el y su color negro*/
+
+.proyectos .tarjeta p{
+    font-weight: 700;
+}/* etiqueta class proyectos precedida la class trajeta p con un peso de la fuente de 700*/
+
+
+footer{
+  border-top:1px solid #CCC;
+  text-align: center;
+  padding: 2rem ;
+}/* etiqueta del pie de pagin con un borde superior de 1px solido de color gris, con el texto centrado,
+y un relleno de 2rem (64px)*/
+
+footer a{
+    color: darkblue;
+    text-decoration: none;
+    font-weight: 700;
+}/* etqueta pie de pagina precedida a de enlaces con color de fuente azul oscuro, sin decoracíon el texto,
+con un peso de 700*/
+
+
+
+
+
+
